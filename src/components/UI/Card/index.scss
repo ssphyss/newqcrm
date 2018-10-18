@@ -1,0 +1,16 @@
+// .hhh {
+//     background-color: yellow;
+// }
+.chartTop {
+    position: relative;
+    padding-top: 38px;
+
+    .Chart__num {
+        position: absolute;
+        top: -6px;    
+    }
+}
+
+.hr {
+    border-bottom: 1px solid #e0e0e0;
+}

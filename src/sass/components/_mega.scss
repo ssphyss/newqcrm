@@ -1,0 +1,50 @@
+/* ====================
+// mega
+// ==================== */
+
+.top__mega-box {
+	// display: inline-block;
+}
+
+.dropdown__mega {
+	.menu__item {
+		@media (max-width: 1199.98px) {
+			margin-bottom: 1rem;
+		}
+		.menu__item {
+			margin-bottom: 0;
+		}
+	}
+	.scroll-box {
+		// height: 300px;
+		// overflow: auto;
+	}
+}
+
+
+// .collapse:not(.show) {
+//    transform: translateX(-300px);
+// }
+// 
+
+
+/* width */
+.dropdown__menu--mega::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+.dropdown__menu--mega::-webkit-scrollbar-track {
+    background: #fff; 
+}
+ 
+/* Handle */
+.dropdown__menu--mega::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.dropdown__menu--mega::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

@@ -1,0 +1,29 @@
+.Chart__num {
+    font-size: 36px;
+    font-weight: 300;
+    color: #333;
+}
+
+.ant-card-head {
+    border-bottom: none;
+}
+
+.ant-card-type-inner .ant-card-head {
+    padding: 0;
+}
+
+.ant-card-type-inner .ant-card-body {
+    padding: 0;
+}
+
+.ant-card-type-inner .ant-card-head-title {
+    font-weight: 500;
+    color: #999;
+}
+
+.ant-card-extra a {
+    color: #5d5d5d;
+    border-bottom: 1px dashed #999;
+    display: inline-block;
+    margin-right: 5px;
+}

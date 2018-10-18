@@ -1,0 +1,78 @@
+/* ====================
+// accordion
+// ==================== */
+
+.accordion {
+	
+	> .accordion__toggle--css {
+		position: absolute;
+		opacity: 0;
+		display: none;
+	}
+
+	& label{
+		position: relative;
+		display: block;
+		height: initial;
+    	padding: 4px 0;
+		// border-top: 1px solid #ddd;
+		background: #fff;
+		font-size: 1rem;
+		font-size: 0.8rem;
+		cursor: pointer;
+
+		&:after {
+			font-family: fontawesome;
+			content: '\f078';
+			font-size: 1rem;
+			position: absolute;
+    		top: 50%;
+			right: 0px;			
+			transform: translateY(-50%) rotate(90deg);
+			transition: .3s transform;
+		}
+	}
+	> section{
+		height: 0;
+		transition: .3s all;
+		overflow: hidden;
+	}
+}
+
+.accordion > .accordion__toggle--css:checked ~ label:after{
+	transform: translateY(-50%) rotate(0deg);
+}
+
+.accordion > .accordion__toggle--css:checked ~ section{
+	height: 162px;
+	// height: initial;
+}
+
+// 第2組
+.accordion__collapse {
+	opacity: 0;
+	max-height: 0;
+	transition: all .5s;
+	
+	&.is--active {
+		opacity: 1;
+		max-height: 150px;
+		height: initial;
+	}
+}
+.accordion {
+	.card {
+		box-shadow: none; 
+	}
+	.card__heading {
+		padding: 0 0 1rem 0;
+	}
+	.card__title {
+    	font-size: .875rem;
+    	font-weight: 400;
+    	display: block;
+    }
+    .card__link {
+    	
+    }
+}

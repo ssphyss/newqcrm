@@ -1,0 +1,93 @@
+/* ====================
+// Sidebar
+// ==================== */
+.menu {
+
+}
+
+.menu {
+	&__nav {
+
+	}
+
+	&__list {
+
+	}
+
+	&__header {
+
+	}
+
+	&__item {
+		position: relative;
+	    padding: 0;
+    	text-transform: capitalize;
+	    overflow: hidden;
+
+		    &--carousel {
+	    	overflow: hidden;
+			// width: 380px;
+		}
+	}
+	&__item > .menu__link {
+		margin: 0;
+		padding: 0;
+		margin: 1rem 0 0 0;
+	}
+	&__title {
+	    margin-bottom: 1rem;
+	}/*__title是item內的標頭*/
+
+	&__link {
+		position: relative;
+		display: block;
+	    padding: .6rem 1rem;
+	    padding: 0 1.75rem 0 0;
+		margin: 1rem 0 0 0;
+	    text-transform: capitalize;
+	    // width: 100%;
+	    // font-size: 1.4rem;
+	    // color: rgba(255, 255, 255, 0.55);
+	    // transition: all .3s ease-in-out;
+		&:after {
+		    // content: "\f107";
+			content: "";
+		    font-family: FontAwesome;
+		    font-size: 1rem;
+		    position: absolute;
+		    width: auto;
+		    height: auto;
+		    left: auto;
+		    // right: 1rem;
+		    right: .6rem;
+		    // top: -1px;
+		    border: 0;		    
+		    transition: color .3s ease-in-out;
+	    }
+	     + .dropdown__menu {
+	     	// top: 0;
+	     }
+	    &.is--active {
+
+	    }
+	    .link__icon {
+    	    margin-right: 10px;
+    		width: 15px;
+	    }
+	}
+	// &__sublist {
+	// 	.menu__item {
+		
+	// 	}
+	// 	.menu__link {
+	// 		// padding-left: 40px;
+	// 		// font-size: .7rem;
+	// 		// &:hover {
+	// 		// 	background-color: yellow;
+	// 		// }
+	// 		// &:after {
+	// 		// 	display: none;
+	// 		// }
+	// 	}
+	// }
+}

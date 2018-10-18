@@ -1,0 +1,45 @@
+/* ====================
+// user-box
+// ==================== */
+
+.user-box {
+}
+
+.user {
+	display: flex;
+	
+    &__item {	  
+
+        > * {
+            // border: 1px solid;   
+            height: 60px;
+            display: flex;
+            align-items: center;
+            padding: 0 1.34rem;
+            font-size: 0.85rem;
+        }
+        // 搜尋
+    	&--search {
+			.btn__search {
+                height: 60px;   // 為了感應區
+            }
+    	}
+        // 通知
+    	&--note {			
+    	}
+        // 大頭貼
+    	&--profile {			
+    	}
+
+    }
+    
+    &__link {
+        padding: .55rem 1rem;
+	    // transition: all .3s ease-in-out;  
+        position: relative;
+    }
+
+    img {
+    	border-radius: 50%;
+    }
+}

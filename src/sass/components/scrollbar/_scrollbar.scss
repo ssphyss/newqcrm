@@ -1,0 +1,26 @@
+/* ====================
+// Scrollbar
+// ==================== */
+
+/* width */
+.sidebar::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+    background: #222; 
+}
+ 
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #ccc; 
+}
+
+

@@ -1,0 +1,69 @@
+/* ====================
+// hamburger
+// ==================== */
+
+.top__hamburger {
+	// display: inline-block;
+}
+
+.hamburger {
+	width: 20px;
+	height: 60px;
+    display: flex;
+    align-items: center;
+	padding: 0;
+    cursor: pointer;
+
+    &.is--active {
+    	.hamburger__inner {
+		    transform: translate3d(0,-5px,0) rotate(-45deg);
+    	}
+		.hamburger__inner:before {
+			top: 0;
+		    transform: rotate(-90deg);
+		}
+		.hamburger__inner:after {
+		    top: 0;
+	 		opacity: 0;
+		}
+    }
+
+	// 範圍大小
+	&__box {
+		position: relative;
+		display: inline-block;
+		width: 18px;
+		height: 12px;
+	}
+	// 三條
+	&__inner {
+		width: 100%;
+		height: 2px;
+		background-color: #484848;
+		position: absolute;
+		bottom: 0;
+		transition: all .12s;
+
+		&:hover {
+			background-color: lighten($primary, 15%);
+		}
+
+		&:before, &:after {
+			position: absolute;	
+			display: block;
+			content: '';
+			width: 100%;
+			height: 2px;	
+			background-color: #484848;
+			transition: all .12s;
+		}
+
+		&:before {
+			top: -10px;
+		}
+
+		&:after {
+			bottom: 5px;
+		}
+	}
+}

@@ -1,0 +1,71 @@
+/* ====================
+// dashboard
+// ==================== */
+
+.dashboard__tools {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	    width: 100%;
+	    padding: 0 1rem;
+	.left {
+	}
+	.right {
+	}
+	.content__title {
+	}
+	.content__desc {
+	}
+}
+
+/* ====================
+// stats__widget
+// ==================== */
+.stats__widget {
+	box-shadow: 0 0 2px 3px rgba(0,0,0,0.045);
+	.card__body {
+		padding: 0;
+	}
+	.content__body {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 1rem 1rem 1rem;
+		&--title {
+			
+		}
+		&--desc {
+			
+		}
+		.left {
+
+		}
+		.right {
+		    width: 55px;
+		    height: 55px;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    border-radius: 50%;
+		    background-color: #3f51b5;
+		}
+		.icon--stats {
+			font-size: 1.5rem;
+    		color: #fff;
+		}
+	}
+	&.card--primary, &.card--danger, &.card--default, &.card--success, &.card--info, &.card--warning{
+		color: #fff; 
+		.left__desc {
+    		color: #fff;
+    	}
+    	.right {
+    		background-color: rgba(0,0,0,0.25);
+    	}
+	}
+
+}
+
+
+
+

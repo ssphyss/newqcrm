@@ -1,0 +1,137 @@
+@charset "utf-8";
+/*--------------------------------------------
+Project    : phy
+Version    : 1.0.0
+Author     : phy
+e-mail     : phys@gmail.com
+Last change: 16/09/2018
+----------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+	  font-family: sans-serif;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+  color: #00af9e;
+}
+
+
+.ant-layout-content {
+  min-height: 100vh;
+}
+
+// 選單
+.ant-menu-item a {
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.ant-layout.ant-layout-has-sider {
+  height: auto;
+}
+// Card相關
+.ant-card.card-wrap {
+  margin: 35px 0;
+  // box-shadow: 20px 20px 49px -27px rgba(0,0,0,.3);
+}
+.ant-layout .ant-layout-content {
+  // min-height: auto;
+}
+
+// input
+.ant-card.card-bg {
+  background: #e9ecec;
+}
+
+.ant-input-affix-wrapper .ant-input:not(:first-child) {
+  border: 1px solid #b4cecd;
+}
+
+/* =========================================
+// 1.0 functions 方程式、variables 變數、mixins、重置
+// ========================================= */
+// @import '../../node_modules/bootstrap/scss/functions';  // grid、variables-mixin、 bs-spacing、forms-inline
+// @import '../../node_modules/bootstrap/scss/variables';
+// @import '../../node_modules/bootstrap/scss/mixins';
+// @import '../../node_modules/bootstrap/scss/bootstrap';
+
+// @import 'config/functions';
+// @import 'config/variables';
+// @import 'config/mixins';
+// @import 'config/reset';  
+
+/* =========================================
+// 2.0 setup 設定 - 動畫、基本、字型、通用
+// ========================================= */
+// @import 'setup/animations';
+// @import 'setup/base';
+// @import 'setup/typography';
+// @import 'setup/utilities';
+
+/* =========================================
+// 3.0 vendors 外部引入使用
+// ========================================= */
+
+/* =========================================
+// 4.0 Grid 格線
+// ========================================= */
+// @import '../../node_modules/bootstrap/scss/grid';
+// @import 'bootstrap/scss/grid';
+// @import 'grid/grid';
+
+/* =========================================
+// 5.0 components 組件、獨立使用
+// ========================================= */
+// @import 'components/accordion/accordion';
+// @import 'components/alerts/alerts';
+// @import 'components/badges/badges';
+// @import 'components/breadcrumb/breadcrumb';
+// @import 'components/buttons/btn';
+// @import 'components/buttons/btn--outline';
+// @import 'components/buttons/btn__social';
+// @import 'components/buttons/btn__social--outline';
+// @import 'components/buttons/btn__social-label';
+// @import 'components/buttons/btn__social-label--outline';
+// @import 'components/card/card';
+// @import 'components/carousel/carousel';
+// @import 'components/dashboard/dashboard';
+// @import 'components/dropdown/dropdown';
+// @import 'components/forms/forms';
+// @import 'components/hamburger';
+// @import 'components/mega';
+// @import 'components/menu/menu';
+// @import 'components/scrollbar/scrollbar';
+// @import 'components/status';
+// @import 'components/table/table';
+// @import 'components/user-box';
+
+/* =========================================
+// 6.0 Layout 全局布局
+// ========================================= */
+// @import 'layout/wrapper';
+// @import 'layout/top';
+// @import 'layout/header';
+// @import 'layout/footer';
+// @import 'layout/navigation';
+// @import 'layout/side-bar';
+// @import 'layout/sidebar';
+
+/* =========================================
+// 7.0 Pages 個別頁面
+// ========================================= */
+// @import 'pages/home';
+// @import 'pages/page__error';
+/* =========================================
+// 8.0 Custom styles 客製化設定
+// ========================================= */
+// @import 'custom/custom';
+ 
+/* =========================================
+// 9.0 scheme 面板設定
+// ========================================= */
+// @import 'scheme/scheme-amber.scss';

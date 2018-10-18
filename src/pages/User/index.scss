@@ -1,0 +1,114 @@
+.login {
+    position: relative;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(13, 90, 90, 0.77), rgba(13, 107, 76, 0.8)), url(https://i.imgur.com/i7aeeMH.jpg);
+    background-size: cover;
+    background-color: rgb(0, 111, 101);
+    background-image: url(./../../assets/login-bg.png);
+    background-attachment: fixed;
+    height: 100%;
+    max-height: 100%;
+    min-height: 99%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.login__box {
+    position: absolute;
+    // top: 45%;
+    left: 50%;
+    // transform: translate(-50%, -50%);
+    transform: translate(-50%, 10%);
+    text-align: center;
+    .logo {
+        padding: 20px;
+        img {
+            height: 45px;
+        }
+    } 
+}
+
+.ant-form-item {
+    text-align: left;
+    margin-bottom: 14px;
+}
+
+.login .ant-card-head {
+    // background: rgba(4, 64, 62, 0.4117647058823529);
+    color: #fff;
+}
+
+.login .ant-card-bordered {
+    min-width: 500px;
+    padding: 60px;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.59);
+    background-color: rgba(255, 255, 255, 0.22);
+    background-color: rgba(0, 51, 46, 0.36);
+    border: none;
+}
+
+.login .ant-card-head {
+    border-bottom: none;
+    color: #fff;
+    font-size: 1.41rem;
+    letter-spacing: 1.2px;
+}
+
+.ant-card-head-title {
+    font-weight: 300;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.login-form-button {
+    width: 100%;
+}
+
+.ant-form-item-control {
+    text-align: left;
+}
+
+.login .ant-btn-primary {
+    background-color: #CDDC39;
+    border-color: #CDDC39;
+    padding: 12px 0px;
+    height: inherit;
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+    color: #fff;
+    background-color: #c4d600c2;
+    border-color: #9ab914;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #066d63;
+    border-color: #066d63;
+}
+
+.ant-input-affix-wrapper .ant-input:not(:first-child) {
+    padding-left: 30px;
+    padding: 21px 39px;
+    background-color: rgba(255, 255, 255, 0.81);
+    border: none;
+    color: #02100f;
+    font-size: 15px;
+}
+
+.login .ant-form-item-label label {
+    color: rgb(255, 255, 255);
+}
+
+.login .ant-checkbox-wrapper, .login .ant-form-item-control-wrapper {
+    color: #fff;
+    a {
+        color: #066d63;
+        color: #ffffff;
+        text-decoration: underline;
+    }
+}
+
+.has-error .ant-form-explain, .has-error .ant-form-split {
+    color: #cddc39;
+}

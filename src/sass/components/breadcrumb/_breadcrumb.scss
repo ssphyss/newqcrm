@@ -1,0 +1,46 @@
+/* ====================
+// breadcrumb
+// ==================== */
+
+
+.breadcrumb {
+	padding: 0rem;
+	margin-top: 0;
+	&:after {
+		display: block;
+		content: '';
+		clear: both;
+	}
+	&__title {
+		text-transform: capitalize;
+	}
+	&__item {
+		color: #3f51b5;
+	    font-size: 13px;
+	    font-weight: 400;
+	    text-transform: capitalize;
+	    transition: all .3s ease-in-out;
+	    &.active {
+		    color: #484848;
+	    }
+	}
+	a, span {
+		&:before {
+		    display: inline-block;
+		    padding: 0 .3rem;
+		    color: #484848;
+		    font-family: "Open Sans",sans-serif;
+		    content: "/";
+		    font-size: 14px
+		}
+	}
+	a:first-child::before {
+		display: none;
+	}
+}
+
+@media screen and (prefers-reduced-motion:reduce) {
+    .breadcrumb__item {
+        transition: none
+    }
+}

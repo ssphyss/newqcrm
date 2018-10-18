@@ -1,0 +1,59 @@
+/* ====================
+// carousel
+// ==================== */
+.carousel__box {
+	position:relative;
+	display: inline-block;
+    overflow: hidden;
+    height: 150px;
+    width: 350px;
+    width:350px;
+	height:150px;
+	position:relative;
+	overflow:hidden;
+}
+.carousel-css {
+	width:500%;
+	-webkit-animation: carousel-css 20s linear infinite;
+	-moz-animation: carousel-css 20s linear infinite;
+	-ms-animation: carousel-css 20s linear infinite;
+	animation: carousel-css 20s linear infinite;
+}
+
+.carousel-css img {
+	display:inline-block;
+}
+
+.carousel-css img:not(:first-child){
+	float:left;
+}
+
+@-webkit-keyframes carousel-css {
+  0%, 23% {margin-left:0}
+  25%, 48% { margin-left:-100%; }
+  50%, 73% { margin-left:-200%; }
+  75%, 98% { margin-left:-300%;}
+  100% { margin-left:0;}
+    
+}
+@-moz-keyframes carousel-css {
+  0%, 23% {margin-left:0}
+  25%, 48% { margin-left:-100%; }
+  50%, 73% { margin-left:-200%; }
+  75%, 98% { margin-left:-300%;}
+  100% { margin-left:0;}
+}
+@-ms-keyframes carousel-css {
+  0%, 23% {margin-left:0}
+  25%, 48% { margin-left:-100%; }
+  50%, 73% { margin-left:-200%; }
+  75%, 98% { margin-left:-300%;}
+  100% { margin-left:0;}
+}
+@keyframes carousel-css {
+  0%, 23% {margin-left:0}
+  25%, 48% { margin-left:-100%; }
+  50%, 73% { margin-left:-200%; }
+  75%, 98% { margin-left:-300%;}
+  100% { margin-left:0;}
+}

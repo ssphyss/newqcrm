@@ -1,0 +1,144 @@
+// background-color: #134240;#13443d
+// background-color: #1b9294;
+// background-color: #cde41f;
+
+#root {
+  // height: 100%;
+  height: inherit;
+} 
+
+.ant-drawer-body {
+  background: #04403e;
+}
+
+.ant-layout {
+  background: #e9ecec;
+}
+
+.ant-layout-content {
+  // min-height: auto;
+  background: #e9ecec;
+}
+
+// sider
+.ant-layout-sider {
+  background: #04403e;
+
+  // background: #fff;
+  // color: #222;
+}
+
+// sider - menu
+.ant-menu-dark {
+  background: #04403e;
+
+  // background: #fff;
+  // color: #222;
+}
+
+.ant-menu-dark .ant-menu-inline.ant-menu-sub {
+  background: #1a5250;
+
+  // background: #eee;
+  // color: #222;
+}
+
+.ant-menu.ant-menu-dark .ant-menu-item-selected {
+  background: #cde41f;
+  color: #164c4a;
+  font-weight: bold;
+
+  // background: #eee;
+}
+
+.ant-menu-dark .ant-menu-item {
+  // color: #333;
+}
+
+.ant-menu-dark .ant-menu-item > a {
+  // color: #333;
+}
+
+// trigger 把官網提供的code貼上,去掉前面的前綴
+.trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+  
+.trigger:hover {
+  color: #cde41f;
+}
+  
+  // logo
+  // #components-layout-demo-custom-trigger .logo {
+  //   height: 32px;
+  //   background: rgba(255,255,255,.2);
+  //   margin: 16px;
+  // }
+
+  .ant-layout.ant-layout-has-sider {
+    flex-direction: row;
+    height: 100%;
+}
+
+.ant-drawer-body {
+  background: #001529;
+}
+
+.ant-layout-sider.ant-layout-sider-dark {
+  .logo {
+    // padding: 0;
+    // margin: 0;
+    padding: 24px;
+    overflow: hidden;
+    img {
+      // height: 21px;
+    }
+  }
+}
+.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-collapsed {
+  .logo {
+    padding: 0;
+    margin: 0;
+    padding: 20px 2px;
+    img {
+      height: 21px;
+    }
+    
+  }
+}
+
+.ant-drawer.ant-drawer-left.ant-drawer-open {
+  h1 {
+    display: none;
+  }
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: rgba(233, 236, 236, 0.84);
+}
+
+.card-wrap__google {
+  background-color: #f94835;
+  .ant-card-head {
+    background: #f94835;
+    color: #fff;
+  }
+  .ant-card-body {
+    background-color: rgba(255, 72, 34, 0.09);
+  }
+}
+
+.card-wrap__fb {
+  background-color: #4c79bf;
+  .ant-card-head {
+    background: #4c79bf;
+    color: #fff;
+  }
+  .ant-card-body {
+    background-color: #4c79bf24;
+  }
+}

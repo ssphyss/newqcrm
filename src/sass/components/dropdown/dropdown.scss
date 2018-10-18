@@ -1,0 +1,204 @@
+/* ====================
+// dropdown
+// ==================== */
+
+.dropdown__mega {
+	/**/
+}
+// 下拉區域的外層定位
+.sub__item {
+	position: relative;
+}
+
+/*----------------------------------------------------------
+下拉選單：
+// 共用樣式與位置
+// 隱藏區域 - 讓下拉區域隱藏等同bs的.dropdown-menu
+-----------------------------------------------------------*/
+
+.dropdown__menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    // display: none;
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding: 1rem 1.5rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border-radius: 0;
+    border: 1px solid #e2e2e2;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.075);
+    min-width: 140px;
+    font-size: 14px;
+    color: #484848;
+    text-align: left;
+    list-style: none;
+    z-index: 1000;
+
+    /*------------------------
+		下拉區域：--mega區域 		 
+	--------------------------*/
+	&.dropdown__menu--mega {
+	    padding: 0rem 1.5rem;
+	    width: 100%;
+		height: 0;
+		display: none;
+		background-color: #efefef;
+		opacity: 0;
+		transition: padding .4s;
+		&.is--active {
+			// background-color: pink; 	
+			// display: block;	
+			height: initial;
+			opacity: 1;
+			padding: 1rem 1.5rem;
+			display: block;
+			&.scroll-box {
+				height: 283px;
+				overflow: auto;
+			}
+		}
+	}
+    /*------------------------
+		下拉區域：--上排選單內區域 		 
+	--------------------------*/
+	&.dropdown__menu--sub {
+		position: relative;
+	    padding: 0rem 1.5rem;
+	    // width: 100%;		
+		// display: none;
+		height: 0;
+		opacity: 0;
+		transition: padding .4s;
+		
+		&.is--active {
+			background-color: pink; 	
+			// display: block;	
+			height: initial;
+			opacity: 1;
+			padding: 1rem 1.5rem;
+		}
+	}
+	/*------------------------
+		下拉區域：--左邊側欄選單區域 		 
+	--------------------------*/
+	// &.dropdown__menu--sublist {
+	// 	opacity: 0;
+	// 	max-height: 0;
+	// 	transition: all .5s;
+
+	// 	&.is--active {
+	// 		opacity: 1;
+	// 		max-height: 200px;
+	// 		height: initial;
+	// 	}
+	// }
+}
+
+/*----------------------------------------------------------
+下拉選單-控制按鈕：
+// 共用樣式與位置
+// data-toggle="dropdown"
+// 下拉控制按鈕a 樣式
+-----------------------------------------------------------*/
+
+.dropdown__toggle {
+	&--mega{
+	    height: 100%;
+	    height: 60px;
+	    display: flex;
+	    align-items: center;
+
+	    // background-color: #f24;
+	    padding: 0 1.34rem;
+	    font-size: 0.85rem;
+
+	    i {
+		    margin-left: .3rem;
+	    }
+
+		// 增加:after偽類,使按鈕具有 ▼ 樣式
+	    &:after {
+		    display: inline-block;
+		    width: 0;
+		    height: 0;
+		    margin-left: .3em;
+		    vertical-align: middle;
+		    content: "";
+		    border-top: .3em solid;
+		    border-right: .3em solid transparent;
+		    border-left: .3em solid transparent;
+		}
+
+		&:focus {
+		    outline: 0;
+		}
+	}
+}
+
+
+.menu__sub {
+
+	.sub__item {
+		
+	}
+
+	.sub__link {
+		display: block;
+		position: relative;
+		padding: 0 1.75rem 0 0;
+		margin: 1rem 0 0 0;
+		text-transform: capitalize;
+		transition: all .3s ease-in-out;
+
+		position: relative;	    
+	    display: inline-block;
+	    width: 100%;
+
+
+     //    display: inline-flex;
+    	// align-items: center;
+		
+	  //   i {
+			// position: absolute;
+			// right: 5px;
+	  //   }
+
+	    &:after {
+    	    content: "";
+		    font-family: FontAwesome;
+		    font-size: 1rem;
+		    position: absolute;
+		    width: auto;
+		    height: auto;
+		    left: auto;
+		    right: .6rem;
+		    top: -1px;
+		    border: 0;
+		    transition: all .3s ease-in-out;
+		    // position: relative;
+	    }
+
+	    & + .sub__dropdown {
+	    	position: relative;
+
+			padding: 0rem 1.5rem;
+    		height: 0;
+    		opacity: 0;
+			transition: padding .4s;
+
+	    	&.active {
+	    		background-color: yellow;
+	    		// transition: all .4s;	    		
+	    		height: initial;
+	    		opacity: 1;
+	    		padding: 1rem 1.5rem;
+	    	}
+
+	    }
+	}	
+}
+
+

@@ -1,0 +1,105 @@
+/* ====================
+// dropdown
+// ==================== */
+
+// .dropdown {
+// 	position: relative;
+// 	margin-bottom: 0;
+// }
+
+//  // data-toggle="dropdown"
+// a.dropdown__toggle {
+//     height: 100%;
+//     height: 60px;
+//     display: flex;
+//     align-items: center;
+
+//     background-color: #f24;
+//     padding: 0 1.34rem;
+//     font-size: 0.85rem;
+
+//     i {
+// 	    margin-left: .3rem;
+//     }
+// }
+
+// /* ====================
+// // dropdown__mega
+// // ==================== */
+
+// .dropdown__mega {
+// 	position: static;
+// }
+
+// // dropdown 共有的
+// .dropdown__menu {
+//     position: absolute;
+//     top: 100%;
+//     left: 0;
+//     padding: 0;
+//     background-color: #fff;
+//     background-clip: padding-box;
+//     border-radius: 0;
+//     border: 1px solid #e2e2e2;
+//     box-shadow: 0 1px 5px rgba(0,0,0,0.075);
+//     display: none;
+//     float: left;
+//     margin: 0;
+//     min-width: 140px;
+//     font-size: 14px;
+//     color: #484848;
+//     text-align: left;
+//     list-style: none;
+//     z-index: 1000;
+// }
+
+// .dropdown__divider {
+// 	background-color: $border-color;
+// 	margin: 0;
+// }
+
+// .dropdown__item {
+// 	display: block;
+// 	width: 100%;
+// 	clear: both;
+// 	color: $body-color;
+// 	border: 0; 
+// 	.dropdown__link {
+// 		width: 100%;
+// 		display: block;	
+// 		text-align: inherit; 
+// 		white-space: nowrap;
+// 		background: none; 
+// 		padding: $drop-padding;
+// }
+
+
+// .mega__menu {
+//     right: 0;
+//     left: 0;
+//     padding: 1rem;
+//     z-index: 1035;
+//     overflow:hidden;
+// }
+
+// // .header__toggle .content__right .user__menu
+// .user__menu {
+//     width: 250px;
+//     border: 0;
+//     box-shadow: 0 1px 1px 1px rgba(0,0,0,0.075);
+// }
+
+// // .header__toggle .content__right .notifications__menu
+// .notifications__menu {
+//     width: 360px;
+//     @media(max-width: 767.98px) {
+// 	    .header__toggle .content__right .notifications__menu {
+// 	        width:100%;
+// 	        box-shadow: none
+// 	    }
+// 	}
+// }
+
+/* ====================
+// dropdown__mega
+// ====================

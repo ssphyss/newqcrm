@@ -1,0 +1,52 @@
+/* ====================
+// animations
+// ==================== */
+
+// 用在首頁背景圖變化
+@keyframes change-bg {
+	0% {
+		background-size: auto;
+	}
+	20% {
+		background-size: contain;
+	}
+
+	40% {		
+		background-size: cover;
+	}
+	
+	70% {
+		background-image: linear-gradient(to right bottom, rgba(255, 235, 59, 0.25), rgba(255, 193, 7, 0)), url(../../src/images/dog_1.gif);
+		background-size: inherit;
+	}
+	100% {
+		background-size: initial;
+	}	
+}
+
+// 用在輸入框的展開線條變化
+.control--animation {
+    position: relative;
+    display: block;
+    width: 100%;
+
+    &:before, &:after {
+		content: "";
+	    position: absolute;
+	    display: block;
+	    width: 0;
+	    top: -1px;
+	    top: 0;
+	    height: 2px;
+	    background-color: #3f51b5;
+	    background-color: $primary;
+	    background-color: #76cbf1;
+	    transition: ease all .3s
+    }
+    &:before {
+		right: 50%
+    }
+    &:after {
+		left: 50%
+    }
+}
