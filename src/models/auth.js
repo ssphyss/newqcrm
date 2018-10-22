@@ -19,7 +19,8 @@ export default {
     },
     effects: {
         *asyncCurrentUser(props, { call, put, select }) { 
-            console.log(props); 
+            // yield put({ type: 'currentUser', payload: 'aaa' });//待刪
+
             const res = yield Axios.ajax({
                 url: '/current_user',
                 method: 'get'
